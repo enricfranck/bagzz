@@ -1,0 +1,122 @@
+{
+  "historic_general": [
+    {
+        "id":1,
+        "titre": "UNE SOLIDE MULTLINATIONALE",
+        "description":"DEPUIS 1986 à CE JOUR",
+        "image": "images/historiques/gen_1.png"
+    },
+    {
+        "id":2,
+        "titre":"",
+        "description":["Multinationale chinoise fondée depuis 26 Aout 1986 par Xu Zhiwei\n",
+         "8 centres de recherches fonctionnels: USA, Japon, Corée, France et en Chine \n",
+         "Plus de 12000 employés dans le monde\n",
+         "Des centaines de produit de diverses categories et qualités \n",
+         "Présents dans 186 pays\n",
+         "Certification ISO9001 de la qualités \n",
+         "Certification ISO14001 protection environmentale \n",
+         "2012, introduction en bourse\n",
+        "Au moins 8 reconnaissance internationnales sur \n",
+        "la satisfaction,la respectabilité, la profitabilité entre autre.\n",
+        "La seule entreprise de marketing de réseau qui a investi vraiment en Afrique\n",
+        "Longrich a pour but de conquérir le monde à partir de l'Afrique. "],
+        "image": "images/historiques/gen_2.jpg"
+      },
+    {
+        "id":3,
+        "titre": "",
+        "description": "",
+        "image": "images/historiques/certificat.jpg"
+
+    },
+    {
+        "id":4,
+        "titre": "",
+        "description": "",
+        "image": "images/historiques/gen_3.jpg"
+
+    },
+    {
+        "id":5,
+        "titre": "",
+        "description": "",
+        "image": "images/historiques/gen_4.jpg"
+
+    },
+    {
+        "id":6,
+        "titre":"",
+        "description":"La seule entreprise de marketing de réseau qui a investi vraiment en Afrique\nLongrich a pour but de conquérir le monde à partir de l'Afrique",
+        "image": "images/historiques/gen_5.jpg"
+
+    },
+    {
+        "id":7,
+        "titre": "",
+        "description":"USINE EN COURS DE CONSTRUCTION A LAGOS NIGERIA",
+        "image": "images/historiques/gen_7.jpg"
+
+    }
+
+ ],
+  "historic_mada": [
+    {
+        "id":1,
+        "titre":"LONGRICH MADAGASCAR ",
+        "description":[".Inscrit à l'EDBM \n" ,
+		"Système en Ariary\n" ,
+		"Compte bancaire locale pour tout transaction\n" ,
+		"Lancement officiel le 07 mars 2020."],
+        "image": "images/historiques/mada_1.jpg"
+
+    },
+    {
+        "id":2,
+        "titre": "",
+        "description":[
+        "Siège officiel et salle de conférence: Galerie FEIMA Analakely (première étage)\n" ,
+		"Dépôt de stock et salle de formation : E-city Tsiazotafo (deuxième étage)\n",
+		"Salle de conférence: It Station Behoririka (troisiéme étage)"
+          ],
+        "image": "images/historiques/mada_2.jpg"
+
+    },
+    {
+        "id":3,
+        "titre": "",
+        "description": "",
+        "image": "images/historiques/mada_21.jpg"
+
+    },
+    {
+        "id":4,
+        "titre":"NOTRE MANAGER DIRECTEUR",
+        "description":["BRAD YANG\n",
+		"FB: BRAD YANG\n",
+		"MAIL: bradyang0724@gmail.com"
+          ],
+        "image": "images/historiques/mada_3.jpg"
+
+    },
+    {
+        "id":5,
+        "titre":"",
+        "description": "Beaucoup de personnes ont changés de vie",
+        "image": "images/historiques/mada_4.jpg"
+
+    },
+    {
+        "id":6,
+        "titre":"AU TOTAL, LONGRICH MADAGASCAR A",
+        "description":["7000 distributeurs environ\n" ,
+		"68 Stockistes\n" ,
+		"2 Diamant 6\n" ,
+		"11 Diamant 5\n" ,
+		"Plusieurs Diamant 4,3,2,1"
+          ],
+        "image": "images/historiques/img.png"
+
+    }
+  ]
+}

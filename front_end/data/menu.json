@@ -1,0 +1,12 @@
+{
+  "home_menue": [
+    {
+      "name": "Historique",
+      "image": "images/historique.png"
+    },
+    {
+      "name": "Marketing",
+      "image": "images/marketing.png"
+    }
+  ]
+}

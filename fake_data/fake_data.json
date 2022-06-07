@@ -1,0 +1,94 @@
+{
+  "product": [
+    {
+      "Nom du produits": "Organic Bananas",
+      "Image": "data_image/organic_banana.png",
+      "Image_icon": "data_image/organic_banana.png",
+      "Ingredients": "qsfq sqfqsf",
+      "Type": "7piece, Price",
+      "Contenu net": "200g",
+      "Usage": "manger",
+      "Fonction": "blabla",
+      "Garentie": "36mois",
+      "Arome": "",
+      "Fluorure": "",
+      "Description": "fqlskf fqhfhqs fqhsflqhsf qkshfkqsfk "
+    },
+    {
+      "Nom du produits": "Red Apple",
+      "Image": "data_image/Vector.png",
+      "Image_icon": "data_image/redApple.png",
+      "Ingredients": "qfqsfqs",
+      "Type": "7piece, Price",
+      "Contenu net": "200g",
+      "Usage": "qsdqs qsdqsdq",
+      "Fonction": "",
+      "Garentie": "32 mois",
+      "Arome": "",
+      "Fluorure": "",
+      "Description": "qsdqs qsdqsdqsd"
+    },
+    {
+      "Nom du produits": "Rice",
+      "Image": "data_image/rice.png",
+      "Image_icon": "data_image/rice.png",
+      "Ingredients": "qfqdbqd",
+      "Type": "7kg, Price",
+      "Contenu net": "50kg",
+      "Usage": "",
+      "Fonction": "",
+      "Garentie": "qsdqsd",
+      "Arome": "",
+      "Fluorure": "",
+      "Description": "qsdqs qsqsdqsd"
+    },
+    {
+      "Nom du produits": "Ginger",
+      "Image": "data_image/ginger.png",
+      "Image_icon": "data_image/ginger.png",
+      "Ingredients": "hfhqqqs",
+      "Type": "7piece, Price",
+      "Contenu net": "300g",
+      "Usage": "",
+      "Fonction": "wxcwxc wxcwxc",
+      "Garentie": "",
+      "Arome": "wxcwxc xwcwxcwxc",
+      "Fluorure": "",
+      "Description": ""
+    },
+    {
+      "Nom du produits": "Dairy & Eggs",
+      "Image": "data_image/dairy_eggs.png",
+      "Image_icon": "data_image/dairy_eggs.png",
+      "Ingredients": "ztze erzer",
+      "Type": "7piece, Price",
+      "Contenu net": "100g",
+      "Usage": "wxcwxcwx xcwxc",
+      "Fonction": "",
+      "Garentie": "22 mois",
+      "Arome": "",
+      "Fluorure": "wxcwxc wxcwxc",
+      "Description": ""
+    }
+  ],
+  "stockist": [
+    {
+      "name": "Siège",
+      "phone": "111111111",
+      "address": "Antananarivo"
+    },
+    {
+      "name": "jhkkuhkgy",
+      "phone": "0202020202",
+      "address": "ygkkb jbhbbh"
+    },{
+      "name": "ijigyfh",
+      "phone": "4886466684",
+      "address": "bjgvhtcdr recrd"
+    },{
+      "name": "rsresrz",
+      "phone": "65413210",
+      "address": " jgjghf htfhfh"
+    }
+  ]
+}

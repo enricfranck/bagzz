@@ -1,0 +1,46 @@
+<MarketingScreen>:
+    name:  'marketing'
+    MDFloatLayout
+        md_bg_color: utils.get_color_from_hex('#ffffff')
+        padding_x: "20dp"
+        MDIconButton:
+            icon:"keyboard-backspace"
+            icon_size: "36dp"
+            pos_hint: {"center_x": 0.08, "center_y": 0.93}
+            on_press: root.manager.current= 'Main'
+
+        MDLabel:
+            id: historic0
+            text: ""
+            pos_hint: {"center_x": 0.5, "center_y": 0.93}
+            font_size: "14sp"
+            halign: "center"
+            markup: True
+            padding_x: '20dp'
+            theme_text_color: "Custom"
+            opacity: 1
+
+        MDLabel:
+            id: historic1
+            text: f"[b][size=20sp]Historique à madagascar[/size][/b]"
+            pos_hint: {"center_x": 0.5, "center_y": 0.93}
+            font_size: "14sp"
+            halign: "center"
+            markup: True
+            padding_x: '20dp'
+            theme_text_color: "Custom"
+            opacity: 0
+
+        ScrollView:
+            size_hint: 1, .95
+            do_scroll_x: False
+            scroll_distance: "2dp"
+            bar_width: 0
+            pos_hint: {"center_x": .5, "center_y": 0.4}
+            MDGridLayout:
+                id: marketing
+                size_hint_y: None
+                #md_bg_color: utils.get_color_from_hex('#808080')
+                height: self.minimum_height
+                spacing: dp(10)
+                cols: 1

@@ -1,0 +1,131 @@
+{
+  "marketing": [
+    {
+        "id":1,
+        "titre":"LE MARKETING DE RESEAU OU MARKETING RELATIONNEL (MLM)",
+        "description":["Il y a plusieurs moyens de s'enrichir, " ,
+		"mais le Marketing de Réseau est le plus noble de tous. " ,
+		"Car tu  t'enrichis uniquement  en aidant les autres à s'enrichir." ,
+		"Robert KIYOZAKi"
+          ],
+        "image": "images/img.png"
+
+    },
+    {
+        "id":2,
+        "titre":"LE MARKETING DE RESEAU EST LA SOLUTION POUR VOUS",
+        "description":["Si vous avez un ou plusieurs objectifs parmi :\n" ,
+		"Complément de revenu\n" ,
+		"Liberté financière\n" ,
+		"Devenir propriétaire de votre propre entreprise\n" ,
+		"Aider les autres\n" ,
+		"Se créer de nouvelles relations\n" ,
+		"Préparer votre retraite\n" ,
+		"Laisser un héritage\n" ,
+		"Croissance personnelle"],
+        "image": "images/img.png"
+
+    },
+    {
+        "id":3,
+        "titre":"C'est quoi le MARKETING DE RESEAU ?",
+        "description":["Le marketing de réseau est de vendre via un réseau de distributeurs qui " ,
+		"vendent à leurs contacts proches ou lointains, " ,
+		"avec la possibilité pour eux même de parrainer d'autres " ,
+		"distributeurs en échange d'une commission cumulative sur les ventes."
+          ],
+        "image": "images/marketing/marck_1.jpg"
+
+    },
+    {
+        "id":4,
+        "titre":"Saviez-vous que",
+        "description":["Les grandes sociétés dépensent  des milliards pour " ,
+		"pouvoir vendre leurs produits."
+          ],
+        "image": "images/marketing/marck_2.jpg"
+
+    },
+    {
+        "id":5,
+        "titre":"Alors que",
+        "description":["Une publicité doit passer sept fois devant une personne pour que celle-ci " ,
+		"commence à l'assimiler "],
+        "image": "images/marketing/marck_3.jpg"
+
+    },
+    {
+        "id":6,
+        "titre": "Exemple de historique",
+        "description":[
+		"Comment vendre le produit de manière plus rapide et " ,
+		"comment toucher le maximum de personne ?"],
+        "image": "images/marketing/marck_4.jpg"
+
+    },
+    {
+        "id":7,
+        "titre":"Le bouche à oreille ",
+        "description":[
+		"La forme de promotion la plus puissante au monde " ,
+		"c'est le bouche à oreille " ,
+		"Robert T. Kiyozaki"
+          ],
+        "image": "images/marketing/marck_5.jpg"
+
+    },
+    {
+        "id":8,
+        "titre":"On le fait tous les jours!!!",
+        "description":["Chaque fois que vous recommandez quelque chose " ,
+		"à une personne, vous faites du Marketing de Réseau"],
+        "image": "images/marketing/marck_6.jpg'"
+
+    },
+    {
+        "id":9,
+        "titre": "Exemple de historique",
+        "description":["Grace à vous, le restaurant gagnera à l'avenir des millions " ,
+		"gràce au réseau que vous aviez battit inconsciemment."],
+        "image": "images/marketing/marck_7.jpg"
+
+    },
+    {
+        "id":10,
+        "titre": "Exemple de historique",
+        "description":"DIFFERENCE ENTRE L'ANCIEN ET LE NOUVEAU MODELE ",
+        "image": "images/marketing/marck_8.jpg"
+
+    },
+    {
+        "id":11,
+        "titre":"Difference entre marketing relationnel et systeme pyramidal",
+        "description": "",
+        "image": "images/marketing/marck_9.jpg"
+
+    },
+    {
+        "id":12,
+        "titre":"Comment choisir une entreprise de marketing de réseau",
+        "description":["Choisissez un domaine qui vous plait \n" ,
+		"Préférez une entreprise qui a au moins 5 ans d'ancienneté\n" ,
+		"Les produits ou services proposés par la société doivent " ,
+		"être des biens de consommation courante\n" ,
+		"Un système de formation dupliquable doit être assuré\n" ,
+		"Lesproduits, quels qu'ils soient, doivent avoir " ,
+		"des prix concurrentiels et/ou une qualité exceptionnelle"],
+        "image": "images/img.png"
+
+    },
+    {
+        "id":13,
+        "titre":"POURQUOI  NOUS AVONS CHOISI LONGRICH COMME PARTENAIRE ",
+        "description":["L'historique de l'entreprise est bien tracé\n" ,
+		"Les produits sont de bonne qualité\n" ,
+		"C'est un vrai marketing de réseau\n" ,
+		"Le plan de compensation est très généreux"
+          ],
+        "image": "images/img.png"
+    }
+]
+}

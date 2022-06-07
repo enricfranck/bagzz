@@ -1,0 +1,129 @@
+{
+  "bonus_nature": [
+    {
+        "id":1,
+        "titre":"",
+        "description":"",
+        "image": "images/renumeration/nature.jpg"
+
+    },
+    {
+        "id":2,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_1.jpg"
+
+    },
+    {
+        "id":3,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_2.jpg"
+
+    },
+    {
+        "id":4,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_3.jpg"
+
+    },
+    {
+        "id":5,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_4.jpg"
+
+    },
+    {
+        "id":6,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_5.jpg"
+
+    },
+    {
+        "id":7,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_6.jpg"
+
+    },
+    {
+        "id":8,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_7.jpg"
+
+    },
+    {
+        "id":9,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_8.jpg"
+
+    },
+    {
+        "id":10,
+        "titre": "",
+        "description": "",
+        "image": "images/renumeration/bonus_9.jpg"
+
+    }
+  ],
+  "bonus_argent": [
+    {
+        "id":1,
+        "titre":"Bonus de vente au detail ",
+        "description": "",
+        "image": "images/renumeration/vente.jpg"
+
+    },
+    {
+        "id":2,
+        "titre":"Bonus de placement ou parrainage ",
+        "description": "",
+        "image": "images/renumeration/placement.jpg"
+
+    },
+    {
+        "id":3,
+        "titre":"Bonus de performance ",
+        "description": "",
+        "image": "images/renumeration/performance.jpg"
+
+    },
+    {
+        "id":4,
+        "titre":"Bonus de développement ",
+        "description": "",
+        "image": "images/renumeration/developpement.jpg"
+
+    },
+    {
+        "id":5,
+        "titre":"Bonus de leadership",
+        "description": "",
+        "image": "images/renumeration/leader.jpg"
+
+    },
+    {
+        "id":6,
+        "titre":"Bonus de maintenance",
+        "description": "",
+        "image": "images/renumeration/maintenance.jpg"
+
+    }
+  ],
+  "extras": [
+    {
+        "id":1,
+        "titre":"Les Extras",
+        "description":["Pourcentage sur bénéfice mondiale\n",
+		"Pourcentage pour stockist\n",
+		"Pourcentage mensuel\n",
+		"Paiement hebdomadaires"],
+        "image": "images/img.png"
+    }
+  ]
+}

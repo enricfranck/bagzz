@@ -1,0 +1,158 @@
+<CardItem>:
+    orientation: "vertical"
+    radius: 10, 10, 10, 10
+    md_bg_color: utils.get_color_from_hex('#FFFFFF')
+    line_color: utils.get_color_from_hex('#808080')
+    size_hint: 0.9, None
+    height: desc.height + img.height
+
+    MDLabel:
+        id: desc
+        text: f'[b][color=000000]{root.title}[/color][/b]\n \n {root.description}' if root.title != "" else root.description
+        font_size: "16sp"
+        halign: "left" if root.description != "" else "center"
+        padding_x: 15 if root.description != "" else 0
+        padding_y: 15 if root.description != "" else 0
+        markup: True
+        size_hint_y:None
+        height:self.texture_size[1] + 2*self.padding[1]
+        theme_text_color: "Custom"
+        text_color: utils.get_color_from_hex('#808080')
+
+    Image:
+        id: img
+        source: root.image
+        size_hint: 1, None
+        size:self.texture_size
+
+<CardItemProduct>:
+    radius: 15,15,15,15
+    orientation: "horizontal"
+    md_bg_color: utils.get_color_from_hex('#FFFFFF')
+    line_color: utils.get_color_from_hex('#808080')
+    size_hint: 0.5, None
+    height: dp(200)
+    Image:
+        source: root.image
+        pos_hint: {"center_x": .5, "center_y": .7}
+        size_hint_x: 0.5
+        allow_stretch: True
+    MDLabel:
+        text: root.name
+        pos_hint: {"center_x": .5, "center_y": 0.48}
+        font_size: "15sp"
+        halign: "left"
+        padding_x: "10dp"
+        theme_text_color: "Custom"
+        text_color: utils.get_color_from_hex('#000000')
+
+    MDLabel:
+        text: root.types
+        pos_hint: {"center_x": .5, "center_y": 0.38}
+        font_size: "12sp"
+        halign: "left"
+        padding_x: "10dp"
+        theme_text_color: "Custom"
+        text_color: utils.get_color_from_hex('#808080')
+
+    MDLabel:
+        text: f"[b]{root.content}[/b]"
+        pos_hint: {"center_x": .5, "center_y": 0.16}
+        font_size: "13sp"
+        halign: "left"
+        padding_x: "10dp"
+        markup: True
+        theme_text_color: "Custom"
+        text_color: utils.get_color_from_hex('#000000')
+
+    MDIconButton:
+        icon: "plus"
+        theme_text_color: "Custom"
+        text_color: utils.get_color_from_hex('#FFFFFF')
+        pos_hint: {"center_x": .76, "center_y": .16}
+        md_bg_color: utils.get_color_from_hex('#10B34E')
+        on_press: root.detail_product(root.name, root.content, root.image, root.types,root.usage, root.function, root.garent, root.arome, root.fluorure, root.description, root.ingredients)
+
+<CardItemMyCart>:
+    orientation: "vertical"
+    md_bg_color: utils.get_color_from_hex('#FFFFFF')
+    size_hint: 1, None
+    height: dp(130)
+    id: root.id
+    MDSeparator:
+        size_hint: 1, None
+        height: dp(10)
+        md_bg_color: utils.get_color_from_hex('#FFFFFF')
+    MDBoxLayout:
+        orientation: 'horizontal'
+        Image:
+            source: root.image
+            pos_hint: {"center_x": .2, "center_y": .5}
+            size_hint_x: 0.4
+            allow_stretch: True
+        MDBoxLayout:
+            orientation: "vertical"
+            MDSeparator:
+                size_hint: 1, None
+                height: dp(10)
+                md_bg_color: utils.get_color_from_hex('#FFFFFF')
+            MDBoxLayout:
+                orientation: "horizontal"
+                MDLabel:
+                    text: f'{root.name} \n [color=808080]{root.category}[/color]'
+                    pos_hint: {"center_x": .5, "center_y": 0.8}
+                    font_size: "18sp"
+                    halign: "left"
+                    markup: True
+                    margin_y: "10dp"
+                    theme_text_color: "Custom"
+                    text_color: utils.get_color_from_hex('#000000')
+
+                MDIconButton:
+                    id: button
+                    icon: "close"
+                    pos_hint: {"center_x":0.95, "center_y":0.8}
+                    theme_text_color: "Custom"
+                    text_color: utils.get_color_from_hex('#000000')
+                    on_press:
+                        app.remove_product(root.name)
+            MDBoxLayout:
+                orientation: "horizontal"
+                MDBoxLayout:
+                    orientation: "horizontal"
+                    MDIconButton:
+                        icon: "minus"
+                        theme_text_color: "Custom"
+                        text_color: utils.get_color_from_hex('#10B34E') if int(qte.text) != 1 else utils.get_color_from_hex('#808080')
+                        md_bg_color: utils.get_color_from_hex('#FFFFFF')
+                        on_press:
+                            qte.text= str(int(qte.text)-1) if int(qte.text) > 1 else str(1)
+                    MDLabel:
+                        id: qte
+                        text: "1"
+                        font_size: "14sp"
+                        halign: "center"
+                        size:dp(10),dp(10)
+                        padding_x: "10dp"
+                        theme_text_color: "Custom"
+                        text_color: utils.get_color_from_hex('#000000')
+                    MDIconButton:
+                        icon: "plus"
+                        theme_text_color: "Custom"
+                        text_color: utils.get_color_from_hex('#10B34E')
+                        on_press:
+                            qte.text= str(int(qte.text)+1)
+                MDLabel:
+                    id: price
+                    text: root.price
+                    font_size: "18sp"
+                    halign: "right"
+                    padding_x: "10dp"
+                    theme_text_color: "Custom"
+                    text_color: utils.get_color_from_hex('#000000')
+            MDSeparator:
+                size_hint: 1, None
+                height: dp(30)
+                md_bg_color: utils.get_color_from_hex('#FFFFFF')
+
+

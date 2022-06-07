@@ -1,0 +1,89 @@
+#:import utils kivy.utils
+
+<Content>
+    md_bg_color: 1, 0, 0, 1
+    size_hint_y:None
+    height: desc.height
+    MDLabel:
+        id: desc
+        text: root.desc
+        font_size: "16sp"
+        halign: "left"
+        theme_text_color: "Custom"
+        markup: True
+        padding_y: dp(5)
+        padding_x: dp(10)
+        size_hint_y:None
+        height:self.texture_size[1] + 2*self.padding[1]
+        text_color: utils.get_color_from_hex('#808080')
+
+
+<ProductDetailScreen>:
+    name:  'product_detail'
+    MDFloatLayout:
+        md_bg_color: utils.get_color_from_hex('#FFFFFF')
+        MDIconButton:
+            icon:"keyboard-backspace"
+            icon_size: "36dp"
+            pos_hint: {"center_x": 0.08, "center_y": 0.93}
+            on_press: root.manager.current= 'Main'
+        Image:
+            id: image
+            pos_hint: {"center_x": .5, "center_y": .8}
+            size_hint_x: 0.6
+            allow_stretch: True
+
+        MDLabel:
+            id: name
+            pos_hint: {"center_x": 0.5, "center_y": 0.65}
+            font_size: "24sp"
+            halign: "left"
+            theme_text_color: "Custom"
+            markup: True
+            padding_x: dp(20)
+            text_color: utils.get_color_from_hex('#000000')
+        MDLabel:
+            id: types
+            pos_hint: {"center_x": 0.5, "center_y": 0.62}
+            font_size: "20sp"
+            halign: "left"
+            theme_text_color: "Custom"
+            markup: True
+            padding_x: dp(20)
+            text_color: utils.get_color_from_hex('#808080')
+        MDSpinner:
+            id: spinner
+            size_hint: None, None
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            size: dp(10), dp(10)
+            pos: 540, 300
+            active: False
+        MDLabel:
+            id: content
+            font_size: "18sp"
+            halign: "right"
+            padding_x: "10dp"
+            padding_x: dp(20)
+            theme_text_color: "Custom"
+            text_color: utils.get_color_from_hex('#000000')
+            pos_hint: {"center_x": 0.5, "center_y": 0.65}
+        ScrollView:
+            size_hint: 0.9, 0.45
+            do_scroll_x: False
+            bar_width: 0
+            pos_hint: {"center_x": .5, "center_y": 0.35}
+            MDGridLayout:
+                margin_y: dp(10)
+                id: description_panel
+                adaptive_height: True
+                cols: 1
+        MDFillRoundFlatButton:
+            text: "[b]Ajouter au panier[/b]"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            markup: True
+            md_bg_color: utils.get_color_from_hex('#10B34E')
+            pos_hint: {"center_x": 0.5, "center_y": 0.07}
+            size_hint: 0.8, 0.06
+            on_press:
+                root.save_product(name.text, image.source, types.text)

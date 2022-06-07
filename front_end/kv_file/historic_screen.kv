@@ -1,0 +1,81 @@
+<HistoricScreen>:
+    name:  'historic'
+    MDFloatLayout
+        md_bg_color: utils.get_color_from_hex('#ffffff')
+        paddind_x: "20dp"
+        MDIconButton:
+            icon:"keyboard-backspace"
+            icon_size: "36dp"
+            pos_hint: {"center_x": 0.08, "center_y": 0.93}
+            on_press: root.manager.current= 'Main'
+
+        MDLabel:
+            id: historic0
+            text: "[b][size=20sp]Historique général[/size][/b]"
+            pos_hint: {"center_x": 0.5, "center_y": 0.93}
+            font_size: "14sp"
+            halign: "center"
+            markup: True
+            padding_x: '20dp'
+            theme_text_color: "Custom"
+            opacity: 1
+
+        MDLabel:
+            id: historic1
+            text: f"[b][size=20sp]Historique à madagascar[/size][/b]"
+            pos_hint: {"center_x": 0.5, "center_y": 0.93}
+            font_size: "14sp"
+            halign: "center"
+            markup: True
+            padding_x: '20dp'
+            theme_text_color: "Custom"
+            opacity: 0
+
+        MDLabel:
+            id:slide0
+            text: "."
+            color: rgba(253,140 ,95, 255)
+            pos_hint: {"center_x": 0.95, "center_y": 0.925}
+            font_size: "80sp"
+        MDLabel:
+            id:slide1
+            text: "."
+            color: rgba(233, 237 ,240, 255)
+            pos_hint: {"center_x": 1, "center_y": 0.925}
+            font_size: "80sp"
+        Carousel:
+            id: carousel
+            loop: True
+            direction: "right"
+            on_current_slide:root.current_slide(self.index)
+            scroll_distance: "50dp"
+            size_hint: 1, 0.9
+            pos_hint: {"center_x":0.5, "center_y":0.44}
+            padding_y: dp(10)
+            ScrollView:
+                size_hint: 1, .95
+                do_scroll_x: False
+                scroll_distance: "2dp"
+                bar_width: 0
+                pos_hint: {"center_x": .5, "center_y": 0.5}
+                MDGridLayout:
+                    id: hist_gen
+                    size_hint_y: None
+                    #md_bg_color: utils.get_color_from_hex('#808080')
+                    height: self.minimum_height
+                    spacing: dp(10)
+                    cols: 1
+            ScrollView:
+                size_hint: 1, .95
+                do_scroll_x: False
+                bar_width: 0
+                pos_hint: {"center_x": .5, "center_y": 0.5}
+                MDGridLayout:
+                    id: hist_mada
+                    size_hint_y: None
+                    #md_bg_color: utils.get_color_from_hex('#808080')
+                    height: self.minimum_height
+                    spacing: dp(10)
+                    cols: 1
+
+

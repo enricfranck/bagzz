@@ -1,0 +1,54 @@
+<ValidationScreen>:
+    name:  'validation'
+    MDFloatLayout
+        md_bg_color: 1, 1, 1, 1
+        padding_x: "20dp"
+
+        FitImage:
+            source: "images/validation/validation.png"
+            pos_hint: {"center_x": 0.5, "center_y": 0.8}
+            size_hint: 1, 0.4
+        MDIconButton:
+            icon:"keyboard-backspace"
+            icon_size: "36dp"
+            pos_hint: {"center_x": 0.08, "center_y": 0.93}
+            on_press: root.manager.current= 'Main'
+        MDLabel:
+            text: "[b][size=20sp]Entrer votre information[/size][/b] \n \n Switch on your location to stay in tune with what's happening in your area"
+            pos_hint: {"center_x": 0.5, "center_y": 0.60}
+            font_size: "14sp"
+            halign: "center"
+            markup: True
+            padding_x: '20dp'
+            theme_text_color: "Custom"
+        MDTextField:
+            id: email
+            pos_hint: {"center_x": 0.5, "center_y": 0.48}
+            hint_text: "Email"
+            size_hint: 0.8, None
+            readonly: False
+        MDTextField:
+            id: phone
+            pos_hint: {"center_x": 0.5, "center_y": 0.39}
+            hint_text: "Téléphone"
+            size_hint: 0.8, None
+            readonly: False
+        MDTextField:
+            id: stockist
+            pos_hint: {"center_x": 0.471, "center_y": 0.29}
+            hint_text: "Stockist ou Siège"
+            size_hint: 0.75, None
+        MDIconButton:
+            id: list_stockist
+            icon: "format-list-bulleted"
+            pos_hint: {"center_x": .89, "center_y": .29}
+            on_press: root.menu_stockist.open()
+        MDFillRoundFlatButton:
+            text: "Envoyer"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            md_bg_color: utils.get_color_from_hex('#10B34E')
+            pos_hint: {"center_x": 0.5, "center_y": 0.15}
+            size_hint: 0.8, 0.06
+            #on_press: root.manager.current= 'Login'
+

@@ -1,0 +1,86 @@
+{
+  "niveau": [
+    {
+        "id":1,
+        "titre": "",
+        "description": "",
+        "image": "images/adhesion/niveau.jpeg"
+
+    },
+    {
+        "id":2,
+        "titre": "",
+        "description": "",
+        "image": "images/adhesion/ad.jpg"
+    }
+  ],
+  "etape": [
+    {
+        "id":1,
+        "titre": "",
+        "description":["Choisir son niveau d'entré\n",
+		"Verser cela à la banque ou directement au stockist"
+          ],
+        "image": "images/adhesion/bfv.jpeg"
+
+    },
+    {
+        "id":2,
+        "titre": "",
+        "description":
+		"Remplir le formulaire d'adhesion avec votre parrain ou marraine",
+        "image": "images/adhesion/form.jpeg"
+
+    },
+    {
+        "id":3,
+        "titre": "",
+        "description":"Choisir son pack",
+        "image": "images/adhesion/mini.jpg"
+
+    },
+    {
+        "id":4,
+        "titre": "",
+        "description": "",
+        "image": "images/adhesion/rich_1.jpg"
+
+    },
+    {
+        "id":5,
+        "titre": "",
+        "description": "",
+        "image": "images/adhesion/rich_2.jpg"
+
+    },
+    {
+        "id":6,
+        "titre": "",
+        "description": "",
+        "image": "images/adhesion/rich_3.jpg"
+
+    },
+    {
+        "id":7,
+        "titre": "",
+        "description": "",
+        "image": "images/adhesion/rich_4.jpg"
+
+    },
+    {
+        "id":8,
+        "titre":"",
+        "description":["Envoyer le tout ou remettre au stockist\n",
+		"Recevoir son ID et mot de passe\n"],
+        "image": "images/adhesion/back.jpg"
+
+    },
+    {
+        "id":9,
+        "titre":"",
+        "description":"Récuperer ses produits",
+        "image": "images/img.png"
+
+    }
+  ]
+}
