@@ -3,6 +3,7 @@ import threading
 
 from kivy.clock import mainthread
 from kivy.properties import StringProperty
+from kivy.uix.scrollview import ScrollView
 from kivy.utils import get_color_from_hex
 from kivymd.app import MDApp
 from kivymd.uix.boxlayout import MDBoxLayout
@@ -25,6 +26,17 @@ class Content_(MDBoxLayout):
     address = StringProperty()
     phone = StringProperty()
 
+
+# class MyScrollView(ScrollView):
+#     def on_touch_down(self, touch):
+#         x, y = self.ids.list_product.to_widget(*self.to_window(*touch.pos))
+#
+#         if self.ids.list_image.collide_point(x, y):
+#             touch.pos = (x, y)
+#             return self.ids.list_image.on_touch_down(touch)
+#         else:
+#             return super(MyScrollView, self).on_touch_down(touch)
+#
 
 class MainScreen(MDScreen):
     def __init__(self, **kw):

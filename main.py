@@ -3,6 +3,7 @@ import os
 from kivy.core.window import Window
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, FadeTransition
+from kivy.uix.scrollview import ScrollView
 from kivymd.app import MDApp
 from kivy.utils import platform, get_color_from_hex
 from kivymd.toast import toast
@@ -16,6 +17,17 @@ from front_end.screens.marketing_screen import MarketingScreen
 from front_end.screens.product_detail_screen import ProductDetailScreen
 from front_end.screens.renumeration_screen import RenumerationScreen
 from front_end.screens.validation_screen import ValidationScreen
+
+
+class MyScrollView(ScrollView):
+    def on_touch_down(self, touch):
+        x, y = self.root.get_screen('Main').ids.list_product.to_widget(*self.to_window(*touch.pos))
+
+        if self.root.get_screen('Main').ids.list_image.collide_point(x, y):
+            touch.pos = (x, y)
+            return self.root.get_screen('Main').ids.list_image.on_touch_down(touch)
+        else:
+            return super(MyScrollView, self).on_touch_down(touch)
 
 
 class HistoricScreen(HistoricScreen):

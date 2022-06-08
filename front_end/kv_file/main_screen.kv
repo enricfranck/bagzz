@@ -11,59 +11,45 @@
     name:  'Main'
     id: main
     MDFloatLayout
-        md_bg_color: 1, 1, 1, 1
+##########################################################################################################
+                              #PRODUCT SCREEN#
+##########################################################################################################
+        MDBoxLayout:
+            md_bg_color: 1, 1, 1, 1
+            pos_hint: {"center_x":0.5, "center_y":0.92}
+            size_hint:0.98, 0.06
+            radius: "25dp","25dp","25dp", "25dp"
+            orientation: 'horizontal'
+            MDIconButton:
+                id: button2
+                icon: "menu"
+                # on_press:
+                theme_text_color: "Custom"
+                text_color: utils.get_color_from_hex('#000000')
+
         Carousel:
             id: carousel
             direction: "right"
             scroll_distance: "50dp"
-            size_hint: 1, 1
-            pos_hint: {"center_x":0.5, "center_y":.5}
+            size_hint: 1, 0.99
+            pos_hint: {"center_x":0.5, "center_y":.35}
             scroll_timeout: 0
 ##########################################################################################################
                               #HOME SCREEN#
 ##########################################################################################################
             MDFloatLayout:
-                md_bg_color: 1, 1, 1, 1
                 Image:
                     source: "images/header.png"
                     pos_hint: {"center_x": .5, "center_y": .92}
                     size_hint_x: 0.9
                     allow_stretch: True
-                MDLabel:
-                    text: "[b]Meilleur vie, meilleur future[/b]"
-                    pos_hint: {"center_x": 0.5, "center_y": 0.81}
-                    font_size: "18sp"
-                    halign: "center"
-                    markup: True
-                    padding_x: "10sp"
 
-                BoxLayout:
-                    pos_hint: {"center_x": 0.5, "center_y": 0.8}
-                    MDList:
-                        TwoLineAvatarIconListItem:
-                            text: "Historique"
-                            secondary_text: "Depuis 1986 à ce jour..."
-                            on_release: root.manager.current= 'historic'
-                            IconLeftWidget:
-                                icon: "images/menu/historique.png"
-                        TwoLineAvatarIconListItem:
-                            text: "Marketing relationnel"
-                            secondary_text: "Saviez-vous que..."
-                            on_release: root.manager.current= 'marketing'
-                            IconLeftWidget:
-                                icon: "images/menu/marketing.png"
-                        TwoLineAvatarIconListItem:
-                            text: "Rénumération"
-                            secondary_text: "Bonus de vente au detail..."
-                            on_release: root.manager.current= 'renum'
-                            IconLeftWidget:
-                                icon: "images/menu/renumeration.png"
-                        TwoLineAvatarIconListItem:
-                            text: "Adhesion membre"
-                            secondary_text: "Choisir son niveau d'entré..."
-                            on_release: root.manager.current= 'adhesion'
-                            IconLeftWidget:
-                                icon: "images/menu/adhesion.png"
+                ScrollView:
+                    size_hint: 0.9, 0.9
+                    do_scroll_x: False
+                    bar_width: 0
+                    pos_hint: {"center_x": .5, "center_y": 0.45}
+
 
 
 ##########################################################################################################
@@ -72,38 +58,28 @@
             MDFloatLayout:
                 md_bg_color: 1, 1, 1, 1
                 orientation: "vertical"
-                MDLabel:
-                    id: label0
-                    text: "[b]Trouver vos besoin[/b]"
-                    pos_hint: {"center_x":0.5, "center_y":0.95}
-                    font_size: "16sp"
-                    halign: "center"
-                    markup: True
-                    theme_text_color: "Custom"
-                    text_color: utils.get_color_from_hex('#000000')
-                MDTextFieldRound:
-                    id: recherche
-                    icon_left: "magnify"
-                    #icon_right: 'eye-off'
-                    hint_text: "Recherche"
-                    pos_hint: {"center_x": .5, "center_y": 0.86}
-                    size_hint: .8, .05
-                    normal_color: utils.get_color_from_hex('#FFFFFF')
-                    color_active: utils.get_color_from_hex('#FFFFFF')
-                    on_text:
-                        root.search_product(recherche.text)
                 ScrollView:
-                    size_hint: 0.9, 0.72
+                    size_hint: 0.9, 0.8
                     do_scroll_x: False
                     bar_width: 0
-                    pos_hint: {"center_x": .5, "center_y": 0.45}
-                    MDGridLayout:
-                        margin_y: dp(10)
-                        id: list_product
-                        size_hint_y: None
-                        height: self.minimum_height
-                        spacing: dp(10)
-                        cols: 2
+                    pos_hint: {"center_x": .5, "center_y": 0.6}
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        Carousel:
+                            id: carousel
+                            direction: "right"
+                            scroll_distance: "50dp"
+                            size_hint: 1, 0.2
+                            pos_hint: {"center_x":0.5, "center_y":.35}
+                            Image:
+                                source: "images/header/img_1.png"
+                        MDGridLayout:
+                            margin_y: dp(10)
+                            id: list_product
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            cols: 2
 
 ##########################################################################################################
                               #MY CART SCREEN#
@@ -137,7 +113,7 @@
                     size_hint: 0.9, 0.7
                     do_scroll_x: False
                     bar_width: 0
-                    pos_hint: {"center_x": .5, "center_y": 0.55}
+                    pos_hint: {"center_x": .5, "center_y": 0.5}
                     MDGridLayout:
                         id: list_my_cart
                         size_hint_y: None
@@ -208,8 +184,9 @@
 
         MDBoxLayout:
             md_bg_color: 1, 1, 1, 1
-            pos_hint: {"center_x":0.5, "center_y":0.02}
-            size_hint:1, 0.08
+            pos_hint: {"center_x":0.5, "center_y":0.05}
+            size_hint:0.98, 0.06
+            radius: "25dp","25dp","25dp", "25dp"
             orientation: 'horizontal'
             MDFloatLayout:
                 orientation: 'vertical'
@@ -217,14 +194,14 @@
                 MDIconButton:
                     id: button0
                     icon: "home-outline"
-                    pos_hint: {"center_x":0.5, "center_y":0.9}
+                    pos_hint: {"center_x":0.5, "center_y":0.55}
                     on_press: root.select_screen(0)
                     theme_text_color: "Custom"
                     text_color: utils.get_color_from_hex('#10B34E')
                 MDLabel:
                     id: label0
                     text: "Menu"
-                    pos_hint: {"center_x":0.5, "center_y":0.6}
+                    pos_hint: {"center_x":0.5, "center_y":0.25}
                     font_size: "11sp"
                     halign: "center"
                     theme_text_color: "Custom"
@@ -235,8 +212,8 @@
                 spacing: 2
                 MDIconButton:
                     id: button1
-                    icon: "shopping-outline"
-                    pos_hint: {"center_x":0.5, "center_y":0.9}
+                    icon: "magnify"
+                    pos_hint: {"center_x":0.5, "center_y":0.55}
                     on_press:
                         root.select_screen(1)
                         root.get_all_product()
@@ -244,8 +221,8 @@
                     text_color: utils.get_color_from_hex('#000000')
                 MDLabel:
                     id: label1
-                    text: "Produit"
-                    pos_hint: {"center_x":0.5, "center_y":0.6}
+                    text: "Search"
+                    pos_hint: {"center_x":0.5, "center_y":0.25}
                     font_size: "11sp"
                     halign: "center"
                     theme_text_color: "Custom"
@@ -255,8 +232,8 @@
                 spacing: 2
                 MDIconButton:
                     id: button2
-                    icon: "cart-minus"
-                    pos_hint: {"center_x":0.5, "center_y":0.9}
+                    icon: "heart-outline"
+                    pos_hint: {"center_x":0.5, "center_y":0.55}
                     on_press:
                         root.select_screen(2)
                         root.get_my_cart()
@@ -264,8 +241,8 @@
                     text_color: utils.get_color_from_hex('#000000')
                 MDLabel:
                     id: label2
-                    text: "Mon panier"
-                    pos_hint: {"center_x":0.5, "center_y":0.6}
+                    text: "favorites"
+                    pos_hint: {"center_x":0.5, "center_y":0.25}
                     font_size: "11sp"
                     halign: "center"
                     theme_text_color: "Custom"
@@ -275,8 +252,8 @@
                 spacing: 2
                 MDIconButton:
                     id: button3
-                    icon: "map-marker-outline"
-                    pos_hint: {"center_x":0.5, "center_y":0.9}
+                    icon: "cart-minus"
+                    pos_hint: {"center_x":0.5, "center_y":0.55}
                     on_press:
                         root.select_screen(3)
                         root.process_spinner_stockist()
@@ -284,8 +261,8 @@
                     text_color: utils.get_color_from_hex('#000000')
                 MDLabel:
                     id: label3
-                    text: "Stockist"
-                    pos_hint: {"center_x":0.5, "center_y":0.6}
+                    text: "My Cart"
+                    pos_hint: {"center_x":0.5, "center_y":0.25}
                     font_size: "11sp"
                     halign: "center"
                     theme_text_color: "Custom"
